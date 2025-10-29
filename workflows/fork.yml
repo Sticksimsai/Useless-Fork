@@ -1,0 +1,14 @@
+name: fork-everything
+on:
+schedule:
+- cron: '0 */12 * * *' # twice a day chaos
+workflow_dispatch:
+jobs:
+fork:
+runs-on: ubuntu-latest
+steps:
+- name: Print intent
+run: echo "Preparing to fork random repositories... lol"
+- name: Always fail (for the meme)
+run: |
+echo "Build status: why?" && exit 1
