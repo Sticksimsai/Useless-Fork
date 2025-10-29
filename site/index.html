@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Useless Fork — $SPRK</title>
+<meta name="description" content="A utensil that forks other repos better than it functions itself." />
+<link rel="icon" href="../assets/logo.svg">
+<link rel="stylesheet" href="style.css" />
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<header class="wrap header">
+<img class="logo" src="../assets/logo.svg" alt="Useless Fork logo"/>
+<div>
+<h1>Useless Fork <small>$SPRK</small></h1>
+<p class="tag">Proudly forking code we do not understand.</p>
+</div>
+<nav>
+<a href="https://github.com/Sticksimsai/Useless-Fork" target="_blank" rel="noreferrer">GitHub</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="#mint" id="mintBtn">Mint $SPRK</a>
+<a href="#fork" id="forkBtn">Fork Random Repo</a>
+</nav>
+</header>
+
+
+<main class="wrap">
+<div id="statusBanner" class="banner hidden">⚠️ Solana is currently experiencing “enhanced rest”.</div>
+
+
+<model-viewer
+id="fork3d"
+src="../assets/useless-fork.glb"
+ar
+auto-rotate
+camera-controls
+shadow-intensity="1"
+exposure="0.95"
+style="width:100%;height:58vh;border-radius:1.25rem;"
+poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='450'%3E%3Ctext x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-size='24'%3ENo GLB yet — it's useless!%3C/text%3E%3C/svg%3E">
+</model-viewer>
+
+
+<section class="cards">
+<article class="card"><h3>High FPS</h3><p>Forks Per Second — steals code faster than you can star it.</p></article>
+<article class="card"><h3>Bug Propagation</h3><p>We don’t fix bugs — we replicate them across forks.</p></article>
+<article class="card"><h3>Corporate Synergy</h3><p>Driving innovation in code duplication synergy.</p></article>
+</section>
+
+
+<section class="cta">
+<button id="maintenanceToggle">Toggle Maintenance Mode</button>
+<button id="spin">Make It Spin Faster</button>
+</section>
+
+
+<footer>
+<p>© <span id="yr"></span> Useless Fork — $SPRK: Powered by questionable decisions.</p>
+</footer>
+</main>
+</body>
+</html>
